@@ -825,7 +825,7 @@ return false;
         <div class="row justify-content-center">
             <div class="col-md-6 wrap order-0 col-lg-2">
                
-                 <img class="logo__image" src="assets/images/ryankey-logo-240x240.jpeg" alt="logo_ryan_key_designs" title="">
+                 <img class="logo__image" src="assets/images/icon-1-200x200.jpg" alt="logo_ryan_key_designs" title="">
             </div>
             <div class="col-md-6 wrap col-lg-3">
                 <div class="footer__content">
@@ -878,7 +878,33 @@ return false;
   <script src="assets/formoid.min.js"></script>
   
   
-  
+  <!-- Messenger 聊天插件 Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your 聊天插件 code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "102419668157632");
+      chatbox.setAttribute("attribution", "biz_inbox");
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v11.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/zh_CN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
 
 </body>
 </html>
