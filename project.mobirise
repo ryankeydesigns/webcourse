@@ -33,7 +33,8 @@
       "presetSourceTheme": "conferencem4",
       "additionalSetColors": [
         "#767676",
-        "#efefef"
+        "#efefef",
+        "#f23801"
       ]
     },
     "path": "@PROJECT_PATH@",
@@ -47,7 +48,7 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 78,
+    "uniqCompNum": 79,
     "versionPublish": "5.6.11",
     "screenshot": "screenshot.png",
     "global_after_body": "<!-- Messenger 聊天插件 Code -->\n    <div id=\"fb-root\"></div>\n\n    <!-- Your 聊天插件 code -->\n    <div id=\"fb-customer-chat\" class=\"fb-customerchat\">\n    </div>\n\n    <script>\n      var chatbox = document.getElementById('fb-customer-chat');\n      chatbox.setAttribute(\"page_id\", \"102419668157632\");\n      chatbox.setAttribute(\"attribution\", \"biz_inbox\");\n\n      window.fbAsyncInit = function() {\n        FB.init({\n          xfbml            : true,\n          version          : 'v11.0'\n        });\n      };\n\n      (function(d, s, id) {\n        var js, fjs = d.getElementsByTagName(s)[0];\n        if (d.getElementById(id)) return;\n        js = d.createElement(s); js.id = id;\n        js.src = 'https://connect.facebook.net/zh_CN/sdk/xfbml.customerchat.js';\n        fjs.parentNode.insertBefore(js, fjs);\n      }(document, 'script', 'facebook-jssdk'));\n    </script>",
@@ -1142,6 +1143,99 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            ".mbr-overlay": {
+              "background-color": "@overlayColor",
+              "opacity": "@overlayOpacity"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-section-tag": {
+              "color": "#767676",
+              "margin-bottom": "0.4375rem"
+            },
+            ".mbr-title-form": {
+              "margin-bottom": "2.8125rem"
+            },
+            ".mbr-section-title": {
+              "margin-bottom": "1rem",
+              "& when (@secondColorTitle)": {
+                "b:last-child, strong:last-child": {
+                  "color": "@secondColor"
+                }
+              }
+            },
+            ".mbr-section-subtitle": {
+              "margin-bottom": "1.5625rem"
+            },
+            ".mbr-social-links": {
+              "margin-top": "0.5rem",
+              "& a": {
+                "display": "inline-block",
+                "color": "@iconColor"
+              },
+              "& span": {
+                "display": "flex",
+                "align-items": "center",
+                "justify-content": "center",
+                "border-radius": "50%",
+                "border": "1px solid @borderIconColor",
+                "width": "36px",
+                "height": "36px",
+                "margin-left": "0.4375rem",
+                "margin-right": "0.4375rem",
+                "transition": "0.3s ease-out",
+                "&:hover": {
+                  "border-color": "@iconColorHover",
+                  "color": "@iconColorHover"
+                }
+              }
+            },
+            ".text-wrapper": {},
+            ".mbr-item": {
+              "display": "flex",
+              "margin-bottom": "30px",
+              "@media (min-width: 546px)": {
+                "width": "50% !important"
+              }
+            },
+            ".map-wrap": {
+              "display": "flex",
+              "justify-content": "center",
+              "align-items": "center",
+              "height": "(@mapHeight * 5rem)",
+              "overflow": "hidden"
+            },
+            ".google-map": {
+              "width": "100%",
+              "height": "100%",
+              "& iframe": {
+                "width": "100%",
+                "height": "100%"
+              }
+            },
+            ".mbr-section-tag-item, .mbr-social-links": {
+              "color": "#767676"
+            }
+          },
+          "_name": "contacts3",
+          "_sourceTheme": "successm4",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"contacts3\" group=\"Contacts\" plugins=\"formstyler, datepicker\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Text Width\" name=\"textWidth\" min=\"4\" max=\"12\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Map Width\" name=\"mapWidth\" min=\"4\" max=\"12\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Map Height\" name=\"mapHeight\" min=\"0\" max=\"10\" step=\"1\" value=\"7\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Reverse\" name=\"reverse\">\n        <input type=\"checkbox\" title=\"Tag\" name=\"showTagText\" checked>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitleText\" checked>\n        <input type=\"checkbox\" title=\"Second Color Title\" name=\"secondColorTitle\" condition=\"showTitleText\" checked>\n        <input type=\"color\" title=\"Second Color Title\" value=\"#4479d9\" name=\"secondColor\" selected condition=\"secondColorTitle && showTitleText\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitleText\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showTextText\" checked>\n        <input type=\"range\" title=\"Item Count\" name=\"items\" min=\"0\" max=\"3\" step=\"1\" value=\"3\">\n        <input type=\"range\" title=\"Icons Count\" name=\"iconCount\" min=\"0\" max=\"5\" step=\"1\" value=\"3\" condition=\"items > 1\">\n        <input type=\"color\" title=\"Border Icon Color\" name=\"borderIconColor\" value=\"#9e9e9e\" condition=\"iconCount > 0 &amp;&amp; items > 1\">\n        <input type=\"color\" title=\"Icon Color\" name=\"iconColor\" value=\"#4479d9\" condition=\"iconCount > 0 &amp;&amp; items > 1\">\n        <input type=\"color\" title=\"Icon Color Hover\" name=\"iconColorHover\" value=\"#4479d9\" condition=\"iconCount > 0 &amp;&amp; items > 1\">\n        <input type=\"checkbox\" title=\"Title Map\" name=\"showTitleMap\">\n        <input type=\"map\" title=\"Map\" name=\"googleMap\" place-id=\"<iframe src=&quot;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15936.124204787937!2d101.60358216082378!3d3.08638727689322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4c764e9315cf%3A0x1c79e5d7024a98df!2sIcon%20City%2C%2047300%20Petaling%20Jaya%2C%20Selangor!5e0!3m2!1sen!2smy!4v1681389597712!5m2!1sen!2smy&quot; width=&quot;600&quot; height=&quot;450&quot; style=&quot;border:0;&quot; allowfullscreen=&quot;&quot; loading=&quot;lazy&quot; referrerpolicy=&quot;no-referrer-when-downgrade&quot;></iframe>\" value=\"<iframe src=&quot;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15936.124204787937!2d101.60358216082378!3d3.08638727689322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4c764e9315cf%3A0x1c79e5d7024a98df!2sIcon%20City%2C%2047300%20Petaling%20Jaya%2C%20Selangor!5e0!3m2!1sen!2smy!4v1681389597712!5m2!1sen!2smy&quot; width=&quot;600&quot; height=&quot;450&quot; style=&quot;border:0;&quot; allowfullscreen=&quot;&quot; loading=&quot;lazy&quot; referrerpolicy=&quot;no-referrer-when-downgrade&quot;></iframe>\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/successm4/components/_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#fafafa\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"hidden\" name=\"usedRecaptcha\" value=\"false\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"(overlay && bg.type=='image')\"></div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row mt-4 align-items-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\" mbr-class=\"{'order-2' : reverse, 'pr-lg-5' : !reverse, 'pl-lg-5' : reverse}\">\n                <div class=\"text-wrapper\" mbr-class=\"{'order-2' : reverse, 'pr-lg-3' : !reverse, 'pl-lg-3' : reverse}\">\n                    <p class=\"mbr-fonts-style mbr-section-tag\" mbr-theme-style=\"display-7\" mbr-if=\"showTagText\" data-app-selector=\".mbr-section-tag\"><b> 上课地点:</b></p>\n                    <h2 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitleText\" data-app-selector=\".mbr-section-title\"><font color=\"#4479d9\"><b>Icon City</b></font></h2>\n                    <p class=\"mbr-fonts-style mbr-section-subtitle w-100\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitleText\" data-app-selector=\".mbr-section-subtitle, .mbr-section-btn\"><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit</i><br></p>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTextText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Group A 开课日期/时间: <b>3/8/2023 (星期四) 11:00am \n</b><br>Group B 开课日期/时间: <b>5/8/2023 (星期六) 11:00am</b><br></p>\n                    <div class=\"text-wrapper row w-100\" mbr-if=\"items > 0\">\n                        <div class=\"mbr-item flex-column col-md-6\" mbr-if=\"items > 0\">\n                            <p class=\"mbr-fonts-style mbr-section-tag-item mb-0\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-tag-item, .mbr-social-links\">Address:</p>\n                            <p class=\"mbr-section-link mbr-fonts-style mb-0 mbr-semibold\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-link\">T3-20-13A, Tower 3, Pusat Perdagangan, Icon City, 57300 Petaling Jaya<br></p>\n                        </div>\n                        <div class=\"mbr-item flex-column col-md-6\" mbr-if=\"items > 1\">\n                            <p class=\"mbr-fonts-style mbr-section-tag-item mb-0\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-tag-item, .mbr-social-links\">Social Media:</p>\n                            <div class=\"mbr-social-links align-left mb-0\" data-counters=\"false\" mbr-if=\"iconCount > 0\">\n                                <a class=\"iconfont-wrapper ml-0\" href=\"https://www.facebook.com/ryankeydesigns/\" target=\"_blank\" mbr-if=\"iconCount > 0\">\n                                    <span mbr-icon class=\"p-2 ml-0 mbr-iconfont socicon-facebook socicon\"></span>\n                                </a>\n                                <a class=\"iconfont-wrapper\" href=\"https://www.linkedin.com/feed/?trk=onboarding-landing\" target=\"_blank\" mbr-if=\"iconCount > 1\">\n                                    <span mbr-icon class=\"p-2 mbr-iconfont socicon-linkedin socicon\"></span>\n                                </a>\n                                <a class=\"iconfont-wrapper\" href=\"https://twitter.com/RyanKey52797190\" target=\"_blank\" mbr-if=\"iconCount > 2\">\n                                    <span mbr-icon class=\"p-2 mbr-iconfont socicon-twitter socicon\"></span>\n                                </a>\n                                <a class=\"iconfont-wrapper\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"iconCount > 3\">\n                                    <span mbr-icon class=\"p-2 mbr-iconfont socicon-youtube socicon\"></span>\n                                </a>\n                                <a class=\"iconfont-wrapper\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"iconCount > 4\">\n                                    <span mbr-icon class=\"p-2 mbr-iconfont socicon-pinterest socicon\"></span>\n                                </a>\n                            </div>\n                        </div>\n                        <div class=\"mbr-item flex-column col-md-6\" mbr-if=\"items > 2\">\n                            <p class=\"mbr-fonts-style mbr-section-tag-item mb-0\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-tag-item, .mbr-social-links\">Google Map link:</p>\n                            <p class=\"mbr-section-link mbr-fonts-style mb-0 mbr-semibold\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-link\"><a href=\"https://goo.gl/maps/LugQiH5D8rvnCmzw8\" class=\"text-black text-primary\" target=\"_blank\">Directions&nbsp;to Icon City</a></p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-{{mapWidth}} my-5 my-lg-0 map-wrap\">\n                <h4 class=\"mbr-section-subtitle mb-3 align-center mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitleMap\" data-app-selector=\".mbr-section-subtitle\">New York</h4>\n                <div class=\"google-map\" mbr-map=\"googleMap\"></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tBjkk7mSko",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "contacts3-26"
         },
         {
           "alias": false,
