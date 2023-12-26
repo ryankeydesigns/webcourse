@@ -1803,6 +1803,60 @@ a {
 .cid-tBjkk7mSko .mbr-social-links {
   color: #767676;
 }
+.cid-tZxGLsoRi4 {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  background-color: #000000;
+}
+.cid-tZxGLsoRi4 .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-tZxGLsoRi4 .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-tZxGLsoRi4 .content-wrapper {
+  background: #000000;
+}
+@media (max-width: 991px) {
+  .cid-tZxGLsoRi4 .content-wrapper .image-wrapper {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .cid-tZxGLsoRi4 .content-wrapper {
+    padding: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .cid-tZxGLsoRi4 .content-wrapper {
+    padding: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .cid-tZxGLsoRi4 .content-wrapper {
+    padding: 5rem 3rem;
+  }
+  .cid-tZxGLsoRi4 .content-wrapper .text-wrapper {
+    padding-left: 2rem;
+  }
+}
+.cid-tZxGLsoRi4 .image-wrapper img {
+  width: 100%;
+  object-fit: cover;
+}
+.cid-tZxGLsoRi4 .card-title {
+  color: #bbbbbb;
+}
+.cid-tZxGLsoRi4 .mbr-text,
+.cid-tZxGLsoRi4 .mbr-section-btn {
+  color: #ffffff;
+}
 .cid-sDSv4tqs64 {
   padding-top: 6rem;
   padding-bottom: 0rem;
