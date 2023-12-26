@@ -682,14 +682,11 @@ body {
 a {
   transition: color 0.6s;
 }
-.cid-sDSlYqMWfe {
-  z-index: 1000;
-  width: 100%;
-  position: relative;
-  min-height: 60px;
+.cid-sDSlYqMWfe .navbar-dropdown {
+  position: relative !important;
 }
-.cid-sDSlYqMWfe nav.navbar {
-  position: fixed;
+.cid-sDSlYqMWfe .navbar-dropdown {
+  position: absolute !important;
 }
 .cid-sDSlYqMWfe .dropdown-item:before {
   font-family: Moririse2 !important;
@@ -786,8 +783,7 @@ a {
   min-height: 70px;
   transition: all 0.3s;
   border-bottom: 1px solid transparent;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0);
 }
 .cid-sDSlYqMWfe .navbar.opened {
   transition: all 0.3s;
@@ -1005,7 +1001,6 @@ a {
 }
 .cid-sDSlYqMWfe .navbar-dropdown {
   padding: 0 1rem;
-  position: fixed;
 }
 .cid-sDSlYqMWfe a.nav-link {
   display: flex;
@@ -1035,7 +1030,7 @@ a {
   }
 }
 .cid-sDTADVrFBh {
-  background-image: url("../../../assets/images/bw-developing-programmer-development-website-design-coding-technologies-2000x1333.jpg");
+  background-image: url("../../../assets/images/woman-sits-desk-front-computer-screen-that-says-i-love-you-2000x1333.jpg");
 }
 .cid-sDTADVrFBh .mbr-text,
 .cid-sDTADVrFBh .mbr-section-btn {
@@ -1106,7 +1101,7 @@ a {
 .cid-tIfKwuqNbe {
   padding-top: 6rem;
   padding-bottom: 6rem;
-  background-image: url("../../../assets/images/le-buzz-kieii2b9gku-unsplash-1920x1280.jpg");
+  background-image: url("../../../assets/images/anime-girl-with-headphones-laptop-generative-ai-1-2000x1334.jpg");
 }
 .cid-tIfKwuqNbe .mbr-fallback-image.disabled {
   display: none;
@@ -1147,7 +1142,6 @@ a {
   flex-wrap: wrap;
   padding: 70px;
   border-radius: 30px;
-  background-color: #232323;
 }
 @media (max-width: 767px) {
   .cid-tIfKwuqNbe .content-container {
@@ -1258,7 +1252,7 @@ a {
 .cid-sDSX6uXJRA {
   padding-top: 6rem;
   padding-bottom: 6rem;
-  background-image: url("../../../assets/images/digital-information-travels-through-fiber-optic-cables-through-network-data-servers-glass-panels-server-room-data-center-1500x844.jpg");
+  background-image: url("../../../assets/images/young-woman-with-laptop-sitting-cafe-front-colorful-lights-watercolor-ilustration-2000x1333.jpg");
 }
 .cid-sDSX6uXJRA .mbr-section-title {
   color: #9fdbf8;
@@ -1806,7 +1800,7 @@ a {
 .cid-tZxGLsoRi4 {
   padding-top: 2rem;
   padding-bottom: 1rem;
-  background-color: #000000;
+  background-image: url("../../../assets/images/digital-information-travels-through-fiber-optic-cables-through-network-data-servers-glass-panels-server-room-data-center-1500x844.jpg");
 }
 .cid-tZxGLsoRi4 .mbr-fallback-image.disabled {
   display: none;
@@ -1851,7 +1845,7 @@ a {
   object-fit: cover;
 }
 .cid-tZxGLsoRi4 .card-title {
-  color: #bbbbbb;
+  color: #ffffff;
 }
 .cid-tZxGLsoRi4 .mbr-text,
 .cid-tZxGLsoRi4 .mbr-section-btn {
@@ -1944,14 +1938,11 @@ a {
     margin: 0 0 20px;
   }
 }
-.cid-tIfr7A4sxL {
-  z-index: 1000;
-  width: 100%;
-  position: relative;
-  min-height: 60px;
+.cid-tIfr7A4sxL .navbar-dropdown {
+  position: relative !important;
 }
-.cid-tIfr7A4sxL nav.navbar {
-  position: fixed;
+.cid-tIfr7A4sxL .navbar-dropdown {
+  position: absolute !important;
 }
 .cid-tIfr7A4sxL .dropdown-item:before {
   font-family: Moririse2 !important;
@@ -2048,8 +2039,7 @@ a {
   min-height: 70px;
   transition: all 0.3s;
   border-bottom: 1px solid transparent;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0);
 }
 .cid-tIfr7A4sxL .navbar.opened {
   transition: all 0.3s;
@@ -2267,7 +2257,6 @@ a {
 }
 .cid-tIfr7A4sxL .navbar-dropdown {
   padding: 0 1rem;
-  position: fixed;
 }
 .cid-tIfr7A4sxL a.nav-link {
   display: flex;
@@ -2297,9 +2286,15 @@ a {
   }
 }
 .cid-tIfr7KssYi {
-  padding-top: 5rem;
-  padding-bottom: 0rem;
-  background-color: #fafafa;
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+  background-image: url("../../../assets/images/portrait-person-working-computer-generative-ai-2000x1121.jpg");
+}
+.cid-tIfr7KssYi .mbr-section-title {
+  color: #ffffff;
+}
+.cid-tIfr7KssYi .mbr-section-subtitle {
+  color: #ffffff;
 }
 .cid-tIg0M0f3Mr {
   padding-top: 45px;
