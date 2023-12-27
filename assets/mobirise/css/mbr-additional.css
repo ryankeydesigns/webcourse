@@ -749,7 +749,7 @@ a {
 }
 .cid-sDSlYqMWfe .dropdown-menu,
 .cid-sDSlYqMWfe .navbar.opened {
-  background: #ffffff !important;
+  background: #000000 !important;
 }
 .cid-sDSlYqMWfe .nav-item:focus,
 .cid-sDSlYqMWfe .nav-link:focus {
@@ -783,7 +783,7 @@ a {
   min-height: 70px;
   transition: all 0.3s;
   border-bottom: 1px solid transparent;
-  background: rgba(255, 255, 255, 0);
+  background: rgba(0, 0, 0, 0);
 }
 .cid-sDSlYqMWfe .navbar.opened {
   transition: all 0.3s;
@@ -928,7 +928,7 @@ a {
   padding: 0.667em 1.667em;
 }
 .cid-sDSlYqMWfe .navbar.navbar-expand-lg .dropdown .dropdown-menu {
-  background: #ffffff;
+  background: #000000;
 }
 .cid-sDSlYqMWfe .navbar.navbar-expand-lg .dropdown .dropdown-menu .dropdown-submenu {
   margin: 0;
@@ -959,7 +959,7 @@ a {
   width: 30px;
   height: 2px;
   border-right: 5px;
-  background-color: #000000;
+  background-color: #ffffff;
 }
 .cid-sDSlYqMWfe button.navbar-toggler .hamburger span:nth-child(1) {
   top: 0;
@@ -1030,6 +1030,8 @@ a {
   }
 }
 .cid-sDTADVrFBh {
+  padding-top: 10rem;
+  padding-bottom: 6rem;
   background-image: url("../../../assets/images/woman-sits-desk-front-computer-screen-that-says-i-love-you-2000x1333.jpg");
 }
 .cid-sDTADVrFBh .mbr-text,
@@ -1938,11 +1940,12 @@ a {
     margin: 0 0 20px;
   }
 }
-.cid-tIfr7A4sxL .navbar-dropdown {
-  position: relative !important;
+.cid-tIfr7A4sxL {
+  z-index: 1000;
+  width: 100%;
 }
-.cid-tIfr7A4sxL .navbar-dropdown {
-  position: absolute !important;
+.cid-tIfr7A4sxL nav.navbar {
+  position: fixed;
 }
 .cid-tIfr7A4sxL .dropdown-item:before {
   font-family: Moririse2 !important;
@@ -2257,6 +2260,7 @@ a {
 }
 .cid-tIfr7A4sxL .navbar-dropdown {
   padding: 0 1rem;
+  position: fixed;
 }
 .cid-tIfr7A4sxL a.nav-link {
   display: flex;
