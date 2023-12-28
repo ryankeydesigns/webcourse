@@ -1219,7 +1219,7 @@ a {
 }
 .cid-sDSsOhzJth {
   padding-top: 0px;
-  padding-bottom: 45px;
+  padding-bottom: 105px;
   background-color: #ffffff;
 }
 .cid-sDSsOhzJth .mbr-text,
@@ -1251,21 +1251,13 @@ a {
 .cid-sDSsOhzJth li:hover {
   color: #22a5e5;
 }
-.cid-sDSX6uXJRA {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  background-image: url("../../../assets/images/young-woman-with-laptop-sitting-cafe-front-colorful-lights-watercolor-ilustration-2000x1333.jpg");
-}
-.cid-sDSX6uXJRA .mbr-section-title {
-  color: #9fdbf8;
-}
 .cid-sDXJtElvOX {
   padding-top: 6rem;
   padding-bottom: 0rem;
   background-color: #ffffff;
 }
 .cid-tZIdKJUiVa {
-  padding-top: 3rem;
+  padding-top: 0rem;
   padding-bottom: 3rem;
   background-color: #ffffff;
 }
@@ -1369,7 +1361,7 @@ a {
 }
 .cid-tZx7vjzJUa {
   padding-top: 0px;
-  padding-bottom: 75px;
+  padding-bottom: 105px;
   background-color: #ffffff;
 }
 .cid-tZx7vjzJUa .mbr-text,
@@ -1404,8 +1396,16 @@ a {
 .cid-tZx7vjzJUa .card-img {
   color: #4479d9;
 }
+.cid-tZJmDGNFaZ {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/young-woman-with-laptop-sitting-cafe-front-colorful-lights-watercolor-ilustration-2000x1333.jpg");
+}
+.cid-tZJmDGNFaZ .mbr-section-title {
+  color: #9fdbf8;
+}
 .cid-tBAw46kcPA {
-  padding-top: 4rem;
+  padding-top: 6rem;
   padding-bottom: 1rem;
   background-color: #fafafa;
 }
@@ -2032,6 +2032,14 @@ a {
   .cid-tZHhdkF9WY .divider {
     margin: 0 0 20px;
   }
+}
+.cid-tZJmz4Hww7 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/young-woman-with-laptop-sitting-cafe-front-colorful-lights-watercolor-ilustration-2000x1333.jpg");
+}
+.cid-tZJmz4Hww7 .mbr-section-title {
+  color: #9fdbf8;
 }
 .cid-tIfr7A4sxL .navbar-dropdown {
   position: relative !important;
@@ -3167,14 +3175,6 @@ a {
     margin-bottom: 3rem;
   }
 }
-.cid-tZCnjjTi0W {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  background-image: url("../../../assets/images/young-woman-with-laptop-sitting-cafe-front-colorful-lights-watercolor-ilustration-2000x1333.jpg");
-}
-.cid-tZCnjjTi0W .mbr-section-title {
-  color: #9fdbf8;
-}
 .cid-tZHhdkF9WY {
   padding-top: 6rem;
   padding-bottom: 2rem;
@@ -3248,4 +3248,12 @@ a {
   .cid-tZHhdkF9WY .divider {
     margin: 0 0 20px;
   }
+}
+.cid-tZJnIt4tt3 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/young-woman-with-laptop-sitting-cafe-front-colorful-lights-watercolor-ilustration-2000x1333.jpg");
+}
+.cid-tZJnIt4tt3 .mbr-section-title {
+  color: #9fdbf8;
 }
